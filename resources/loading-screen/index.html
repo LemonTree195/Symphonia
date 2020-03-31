@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+    <title>SymphoniaLife</title>
+</head>
+<body>
+    <h1 class="enable_music">Appuyer sur <strong>espace</strong> pour activer/désactiver la musique</h1>
+
+    <section>
+        <div class="container">
+          <div class="background-img">
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content">
+                <h2><strong>SymphoniaLife</strong> </h2><br>
+                <p><a href="#" style="color:#ffffff;" target="_blank"><b>Informations SymphoniaLife</b>.</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">Discord : discord.gg/fYvMAxh.</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">Site : [EN DEV]</a></p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="container-3">
+          <div class="background-img-3">
+            <div class="box-3">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content-3">
+                <h2><strong>SymphoniaLife</strong></h2><br>
+
+                <p><a href="#" style="color:#ffffff;" target="_blank"><b>Touches I-G</b>.</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">F1 = Changer la distance des voix</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">F2 = Inventaire</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">F3 = Telephone</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">F5 = Menu perso</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">F10 = Afficher son ID</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">U = Clefs voiture</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">L = Coffre voiture</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">K = Ceinture de sécurité</a></p><br>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-2">
+          <div class="background-img-2">
+            <div class="box-2">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content-2">
+                <h2><strong>SymphoniaLife</strong></h2><br>
+                <p><a href="#" style="color:#ffffff;" target="_blank">Bienvenue sur <b>SymphoniaLife</b>.</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">Vous etes obliger de rejoindre le discord sous peine de sanction administrative.</a></p><br>
+                <p><a style="color:#ffffff;" target="_blank">Lisez le reglement afin de ne pas avoir de probleme I-G.</a></p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="progress"></div>
+
+      <audio id="leson" autoplay loop>
+        <source src="music/music.ogg" type="audio/ogg">
+      </audio> 
+
+<script>
+
+      var play = false;
+      var myAudio = document.getElementById("leson");
+      myAudio.autoplay = true;
+      myAudio.volume = 0.1;
+  
+      function onKeyDown(event) {
+              switch (event.keyCode) {
+                  case 32: //SpaceBar                    
+                      if (play) {
+                          myAudio.pause();
+                          play = false;
+                      } else {
+                          myAudio.play();
+                          play = true;
+                      }
+                      break;
+              }
+        return false;
+      }
+  
+      window.addEventListener("keydown", onKeyDown, false);
+      </script>
+
+</body>
+</html>
