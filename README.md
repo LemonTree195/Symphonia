@@ -6,6 +6,4 @@ Some people have fun selling my base so I put it here :)
 
 **All the triggers have been changed by ddx_, don't forget to change them with esx_ !**
 
-Twitter : https://twitter.com/dadoux93_
-
 Discord: dadoux93#1994
